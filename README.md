@@ -2,11 +2,14 @@
 
 ##   GO Language Course Content
 
-Target audience : beginner- and intermediate-level developers in the Go programming language.
-Prerequisite    : No knowledge of any language, nor design patterns is expected.
-Course Composure: 80% practical and 20% theory
+**Target audience :** beginner- and intermediate-level developers in the Go programming language.
+
+**Prerequisite    :** No knowledge of any language, nor design patterns is expected.
+
+**Course Composure:** 80% practical and 20% theory
 
 Day 1
+-----
 
     Chapter 01: Introduction
                 Necessity & importance of Golang
@@ -37,3 +40,59 @@ Day 1
                     Escape sequences
                     print type
                     string formatting
+
+
+Day 2
+------
+
+                    String immutability
+                                    string attributes
+                                    utf strings
+                                    number parsing
+                                    bytes and runes
+
+            Chapter 04: Language Components
+                            Relational Operations
+                            Logical Operations
+                            Boolean Operations
+                            Bitwise Operations
+                            Conditions
+                            Loops
+                            Range
+                            Init
+
+## Next class
+
+
+                Chapter 05: MoreTypes
+                                Arrays
+                                Slices
+                                Pointers
+                                Maps
+                                Structs
+                                Methods
+                                Interfaces
+
+                Chapter 06: Error Handling
+                                Defer
+                                panic
+                                recover
+                                create errors
+
+                Chapter 07: Debugging
+                                delve package & commands
+
+                Chapter 08: Functions
+                                Functions signature
+                                Functions with args
+                                swapping
+                                naked returns
+                                pointers as returns
+                                variadic functions
+                                Global vs Local Scope
+                                Function Literals,
+                                Closure, Generator,
+                                Recursions
+                                Higher-Order Functions
+
+                Chapter 09: Goroutines, Channels, Concurrency
