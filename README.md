@@ -73,10 +73,10 @@
                         Defer
                         panic
                         recover
-                        create errors
 
 ## Next class
 
+                        create errors
         Chapter 07: Debugging
                         delve package & commands
 
