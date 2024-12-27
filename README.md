@@ -1,6 +1,6 @@
 # GolangBatchDec2024
 
-##   GO Language Course Content
+## GO Language Course Content
 
 **Target audience :** beginner- and intermediate-level developers in the Go programming language.
 
@@ -8,8 +8,7 @@
 
 **Course Composure:** 80% practical and 20% theory
 
-Day 1
------
+### Day 1    - 24th Feb 2024
 
     Chapter 01: Introduction
                 Necessity & importance of Golang
@@ -41,9 +40,7 @@ Day 1
                     print type
                     string formatting
 
-
-Day 2
-------
+### Day 2    - 26th Feb 2024
 
                     String immutability
                     string attributes
@@ -61,9 +58,7 @@ Day 2
                     Range
                     Init
 
-
-Day 3
-------
+### Day 3    - 27th Feb 2024
 
         Chapter 05: MoreTypes
                         Arrays
@@ -79,6 +74,8 @@ Day 3
                         panic
                         recover
                         create errors
+
+## Next class
 
         Chapter 07: Debugging
                         delve package & commands
@@ -99,5 +96,14 @@ Day 3
         Chapter 09: Goroutines, Channels, Concurrency
 
 
-## Next class
+### Concepts Discussed
 
+    Design Patterns 
+        Iterator pattern
+
+
+    data structure
+        stack 
+        Queue
+        set
+        Single LinkedList
