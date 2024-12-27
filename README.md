@@ -46,53 +46,58 @@ Day 2
 ------
 
                     String immutability
-                                    string attributes
-                                    utf strings
-                                    number parsing
-                                    bytes and runes
+                    string attributes
+                    utf strings
+                    number parsing
+                    bytes and runes
 
-            Chapter 04: Language Components
-                            Relational Operations
-                            Logical Operations
-                            Boolean Operations
-                            Bitwise Operations
-                            Conditions
-                            Loops
-                            Range
-                            Init
+    Chapter 04: Language Components
+                    Relational Operations
+                    Logical Operations
+                    Boolean Operations
+                    Bitwise Operations
+                    Conditions
+                    Loops
+                    Range
+                    Init
+
+
+Day 3
+------
+
+        Chapter 05: MoreTypes
+                        Arrays
+                        Slices
+                        Pointers
+                        Maps
+                        Structs
+                        Methods
+                        Interfaces
+
+        Chapter 06: Error Handling
+                        Defer
+                        panic
+                        recover
+                        create errors
+
+        Chapter 07: Debugging
+                        delve package & commands
+
+        Chapter 08: Functions
+                        Functions signature
+                        Functions with args
+                        swapping
+                        naked returns
+                        pointers as returns
+                        variadic functions
+                        Global vs Local Scope
+                        Function Literals,
+                        Closure, Generator,
+                        Recursions
+                        Higher-Order Functions
+
+        Chapter 09: Goroutines, Channels, Concurrency
+
 
 ## Next class
 
-
-                Chapter 05: MoreTypes
-                                Arrays
-                                Slices
-                                Pointers
-                                Maps
-                                Structs
-                                Methods
-                                Interfaces
-
-                Chapter 06: Error Handling
-                                Defer
-                                panic
-                                recover
-                                create errors
-
-                Chapter 07: Debugging
-                                delve package & commands
-
-                Chapter 08: Functions
-                                Functions signature
-                                Functions with args
-                                swapping
-                                naked returns
-                                pointers as returns
-                                variadic functions
-                                Global vs Local Scope
-                                Function Literals,
-                                Closure, Generator,
-                                Recursions
-                                Higher-Order Functions
-
-                Chapter 09: Goroutines, Channels, Concurrency
