@@ -1,6 +1,6 @@
 # GolangBatchDec2024
 
-##   GO Language Course Content
+## GO Language Course Content
 
 **Target audience :** beginner- and intermediate-level developers in the Go programming language.
 
@@ -8,8 +8,7 @@
 
 **Course Composure:** 80% practical and 20% theory
 
-Day 1
------
+### Day 1    - 24th Feb 2024
 
     Chapter 01: Introduction
                 Necessity & importance of Golang
@@ -41,58 +40,70 @@ Day 1
                     print type
                     string formatting
 
-
-Day 2
-------
+### Day 2    - 26th Feb 2024
 
                     String immutability
-                                    string attributes
-                                    utf strings
-                                    number parsing
-                                    bytes and runes
+                    string attributes
+                    utf strings
+                    number parsing
+                    bytes and runes
 
-            Chapter 04: Language Components
-                            Relational Operations
-                            Logical Operations
-                            Boolean Operations
-                            Bitwise Operations
-                            Conditions
-                            Loops
-                            Range
-                            Init
+    Chapter 04: Language Components
+                    Relational Operations
+                    Logical Operations
+                    Boolean Operations
+                    Bitwise Operations
+                    Conditions
+                    Loops
+                    Range
+                    Init
+
+### Day 3    - 27th Feb 2024
+
+        Chapter 05: MoreTypes
+                        Arrays
+                        Slices
+                        Pointers
+                        Maps
+                        Structs
+                        Methods
+                        Interfaces
+
+        Chapter 06: Error Handling
+                        Defer
+                        panic
+                        recover
 
 ## Next class
 
+                        create errors
+        Chapter 07: Debugging
+                        delve package & commands
 
-                Chapter 05: MoreTypes
-                                Arrays
-                                Slices
-                                Pointers
-                                Maps
-                                Structs
-                                Methods
-                                Interfaces
+        Chapter 08: Functions
+                        Functions signature
+                        Functions with args
+                        swapping
+                        naked returns
+                        pointers as returns
+                        variadic functions
+                        Global vs Local Scope
+                        Function Literals,
+                        Closure, Generator,
+                        Recursions
+                        Higher-Order Functions
 
-                Chapter 06: Error Handling
-                                Defer
-                                panic
-                                recover
-                                create errors
+        Chapter 09: Goroutines, Channels, Concurrency
 
-                Chapter 07: Debugging
-                                delve package & commands
 
-                Chapter 08: Functions
-                                Functions signature
-                                Functions with args
-                                swapping
-                                naked returns
-                                pointers as returns
-                                variadic functions
-                                Global vs Local Scope
-                                Function Literals,
-                                Closure, Generator,
-                                Recursions
-                                Higher-Order Functions
+### Concepts Discussed
 
-                Chapter 09: Goroutines, Channels, Concurrency
+    Design Patterns 
+        Iterator pattern
+
+
+    data structure
+        stack 
+        Queue
+        set
+        Single LinkedList
