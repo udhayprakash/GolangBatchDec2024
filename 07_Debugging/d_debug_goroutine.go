@@ -27,3 +27,8 @@ func main() {
 // goroutine <id>  // switch to a specific goroutine
 // step  // step through the goroutine
 // quit  // Exit the debugger
+
+
+// n line by line 
+// step block by block 
+// continue -- breakpoint wise 
