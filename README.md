@@ -74,9 +74,10 @@
                         panic
                         recover
 
-## Next class
+### Day 4    - 30th Feb 2024
 
                         create errors
+
         Chapter 07: Debugging
                         delve package & commands
 
@@ -93,13 +94,69 @@
                         Recursions
                         Higher-Order Functions
 
-        Chapter 09: Goroutines, Channels, Concurrency
+        Chapter 09: Goroutines, Channels
+
+## Next class
+
+                    waitgroups, Concurrency
+
+
+        Chapter 10: Modules
+                        OS
+                        base64-encoding
+                        time
+                        math
+                        rand
+                        Crypto
+                        bufio
+                        container
+                        sort
+                        hash & Cryptography
+                        StrConv
+                        runtime
+                        context
+                        reflect
+
+                        Creating Custom Packages
+
+        Chapter 11: File Operations
+                        UnStructured- text, pdf files
+                        Structured - csv, xml, json, yaml
+                        ZipFiles - .zip, .tar files
+
+        Chapter 12: Logging
+                        Built-in logger
+                        Logrus
+
+        Chapter 13: Databases
+                        - sqlite
+                        - PostgreSQL
+                        - MongoDB
+                    ORM
+                        - GORM
+                        - ent
+
+        Chapter 14: Code Quality
+                unit testing,
+					table driven tests,
+					asserts, Testify
+				coverage, profiling, benchmarking
+
+
+        Chapter 15: Regular Expressions
+
+
+        Chapter 16: Web Services
+                        Consuming REST API
+                        (encoding)
 
 
 ### Concepts Discussed
 
     Design Patterns 
         Iterator pattern
+        Decorator
+        Generator
 
 
     data structure
@@ -107,3 +164,6 @@
         Queue
         set
         Single LinkedList
+
+
+        
