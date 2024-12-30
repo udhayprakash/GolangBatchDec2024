@@ -74,9 +74,10 @@
                         panic
                         recover
 
-## Next class
+### Day 4    - 30th Feb 2024
 
                         create errors
+
         Chapter 07: Debugging
                         delve package & commands
 
@@ -95,11 +96,15 @@
 
         Chapter 09: Goroutines, Channels, Concurrency
 
+## Next class
+
 
 ### Concepts Discussed
 
     Design Patterns 
         Iterator pattern
+        Decorator
+        Generator
 
 
     data structure
@@ -107,3 +112,6 @@
         Queue
         set
         Single LinkedList
+
+
+        
