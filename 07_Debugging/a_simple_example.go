@@ -23,4 +23,9 @@ NOTE:
 		continue
 
 	All commands are similar to that of pdb of python.
+
+
+	To change, 
+		(dlv) call msg = "Hello world"
+
 */

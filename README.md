@@ -8,7 +8,7 @@
 
 **Course Composure:** 80% practical and 20% theory
 
-### Day 1    - 24th Feb 2024
+### Day 1    - 24th Dec 2024
 
     Chapter 01: Introduction
                 Necessity & importance of Golang
@@ -40,7 +40,7 @@
                     print type
                     string formatting
 
-### Day 2    - 26th Feb 2024
+### Day 2    - 26th Dec 2024
 
                     String immutability
                     string attributes
@@ -58,7 +58,7 @@
                     Range
                     Init
 
-### Day 3    - 27th Feb 2024
+### Day 3    - 27th Dec 2024
 
         Chapter 05: MoreTypes
                         Arrays
@@ -74,7 +74,7 @@
                         panic
                         recover
 
-### Day 4    - 30th Feb 2024
+### Day 4    - 30th Dec 2024
 
                         create errors
 
@@ -96,13 +96,21 @@
 
         Chapter 09: Goroutines, Channels
 
-## Next class
+### Day 5    - 31st Dec 2024
 
-                    waitgroups, Concurrency
-
+                    waitgroups
+                        map, sync.map
+                        mutex
+                        race conditions
+                    Concurrency
+                    workerpools pattern
+                    singleton pattern
 
         Chapter 10: Modules
                         OS
+
+## Next class
+                
                         base64-encoding
                         time
                         math
@@ -157,6 +165,10 @@
         Iterator pattern
         Decorator
         Generator
+        singleton pattern 
+    
+    concurrency pattern
+        workerpool pattern
 
 
     data structure

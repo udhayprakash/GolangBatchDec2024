@@ -50,7 +50,30 @@ Step through the loop:
 Exit the debugger
 
 	quit
-*/
+
+
+	> main.sum() ./b_with_function_call.go:12 (PC: 0x4af088)
+	Command failed: expression *ast.CompositeLit not implemented
+	
+	(dlv) call nums[0] = 9
+	> [Breakpoint 1] main.sum() ./b_with_function_call.go:12 (hits goroutine(1):1 
+
+	(dlv) call nums = []{}int{9, 99, 999, 9999, 99999}
+	> [Breakpoint 1] main.sum() ./b_with_function_call.go:12 (hits goroutine(1):1 total:1) (PC: 0x4af088)
+	Command failed: 1:4: expected type, found '{'
+
+
+	// not all operations can be done
+
+	(dlv) nums = append(nums, 888)
+	Command failed: command not available
+	(dlv) call nums = append(nums, 888)
+	xcr0: 0xe7 xstate_bv: 0x2
+	> main.sum() ./b_with_function_call.go:12 (PC: 0x4af088)
+	Command failed: could not find symbol value for append
+	(dlv) set nums = append(nums, 888)
+	Command failed: function calls not allowed without using 'call'
+	*/
 
 
 // dlv debug filename.go
