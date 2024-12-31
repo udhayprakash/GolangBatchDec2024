@@ -10,6 +10,8 @@ func say(s string) {
 		// runtime.Gosched() means let the CPU execute
 		// other goroutines, and come back at some point.
 		runtime.Gosched()
+		// presence of this statement, tells to the compiler that this 
+		// goroutine is comfortable with context switching
 		fmt.Println(s, i)
 
 	}

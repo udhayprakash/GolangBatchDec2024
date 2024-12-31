@@ -27,7 +27,7 @@ func main() {
 	for {
 		fmt.Println("<-squares :", <-squares)
 	}
-	// infinite loop -- so, fialing in the last
+	// infinite loop -- so, fialing in the last, close()
 
 }
-// AssignmentsL use range to iterate over the channel
+// Assignments: use range to iterate over the channel
