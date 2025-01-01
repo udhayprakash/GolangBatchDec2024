@@ -111,8 +111,9 @@
 
 ### Day 6    - 01st Jan 2025
 
-                        OS - flags
-                        base64-encoding
+                        flag, os/exec
+                        encoding/base32
+                        encoding/base64
                         time
                         math
                         rand
