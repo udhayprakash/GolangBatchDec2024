@@ -117,13 +117,15 @@
                         time
                         math
                         rand
-                        Crypto
-                        bufio
+                        hash & Cryptography
                         container
                         sort
-                        hash & Cryptography
-                        StrConv
                         runtime
+
+## Next class
+
+                        bufio
+                        StrConv
                         context
                         reflect
 
@@ -134,7 +136,6 @@
                         Structured - csv, xml, json, yaml
                         ZipFiles - .zip, .tar files
 
-## Next class
 
         Chapter 12: Logging
                         Built-in logger
