@@ -109,8 +109,9 @@
         Chapter 10: Modules
                         OS
 
-## Next class
-                
+### Day 6    - 01st Jan 2025
+
+                        OS - flags
                         base64-encoding
                         time
                         math
@@ -131,6 +132,8 @@
                         UnStructured- text, pdf files
                         Structured - csv, xml, json, yaml
                         ZipFiles - .zip, .tar files
+
+## Next class
 
         Chapter 12: Logging
                         Built-in logger
