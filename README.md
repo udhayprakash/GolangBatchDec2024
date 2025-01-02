@@ -109,19 +109,23 @@
         Chapter 10: Modules
                         OS
 
-## Next class
-                
-                        base64-encoding
+### Day 6    - 01st Jan 2025
+
+                        flag, os/exec
+                        encoding/base32
+                        encoding/base64
                         time
                         math
                         rand
-                        Crypto
-                        bufio
+                        hash & Cryptography
                         container
                         sort
-                        hash & Cryptography
-                        StrConv
                         runtime
+
+## Next class
+
+                        bufio
+                        StrConv
                         context
                         reflect
 
@@ -131,6 +135,7 @@
                         UnStructured- text, pdf files
                         Structured - csv, xml, json, yaml
                         ZipFiles - .zip, .tar files
+
 
         Chapter 12: Logging
                         Built-in logger
