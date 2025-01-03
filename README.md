@@ -122,10 +122,12 @@
                         sort
                         runtime
 
-## Next class
-
+### Day 7    - 02nd Jan 2025
                         bufio
                         StrConv
+
+### Day 6    - 03rd Jan 2025
+
                         context
                         reflect
 
@@ -135,6 +137,8 @@
                         UnStructured- text, pdf files
                         Structured - csv, xml, json, yaml
                         ZipFiles - .zip, .tar files
+
+## Next class
 
 
         Chapter 12: Logging
