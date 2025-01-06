@@ -144,9 +144,14 @@
                         Archive files - .zip, .tar files
                         compress files - .gzip, .zlib files
 
+                        Multimedia files 
+                            - image files
+                            - audio (.wav) files
+
         Chapter 12: Logging
                         Built-in logger
                         Logrus
+                        glog
 
 ## Next class
 

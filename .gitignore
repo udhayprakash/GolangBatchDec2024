@@ -38,3 +38,11 @@ go.work.sum
 
 # audio files
 *.wav
+
+
+# log files
+*.log
+*.log.*
+*.ERROR
+*.INFO
+*.WARNING
