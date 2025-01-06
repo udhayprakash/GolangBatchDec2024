@@ -122,7 +122,7 @@
                         sort
                         runtime
 
-## Next class
+### Day 7    - 02nd Jan 2025
 
                         bufio
                         StrConv
@@ -136,6 +136,7 @@
                         Structured - csv, xml, json, yaml
                         ZipFiles - .zip, .tar files
 
+## Next class
 
         Chapter 12: Logging
                         Built-in logger
