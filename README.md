@@ -153,25 +153,22 @@
                         Logrus
                         glog
 
+        Chapter 13: Regular Expressions
+
 ## Next class
 
-        Chapter 13: Databases
+        Chapter 14: Databases
                         - sqlite
                         - PostgreSQL
                         - MongoDB
                     ORM
                         - GORM
-                        - ent
 
-        Chapter 14: Code Quality
-                unit testing,
-					table driven tests,
-					asserts, Testify
-				coverage, profiling, benchmarking
-
-
-        Chapter 15: Regular Expressions
-
+        Chapter 15: Code Quality
+                        unit testing,
+                        table driven tests,
+                        asserts, Testify
+                        coverage, profiling, benchmarking
 
         Chapter 16: Web Services
                         Consuming REST API
