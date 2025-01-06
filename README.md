@@ -123,10 +123,11 @@
                         runtime
 
 ### Day 7    - 02nd Jan 2025
+
                         bufio
                         StrConv
 
-### Day 6    - 03rd Jan 2025
+### Day 8    - 03rd Jan 2025
 
                         context
                         reflect
@@ -136,14 +137,18 @@
         Chapter 11: File Operations
                         UnStructured- text, pdf files
                         Structured - csv, xml, json, yaml
-                        ZipFiles - .zip, .tar files
 
-## Next class
+### Day 9    - 06th Jan 2025
 
+                        context
+                        Archive files - .zip, .tar files
+                        compress files - .gzip, .zlib files
 
         Chapter 12: Logging
                         Built-in logger
                         Logrus
+
+## Next class
 
         Chapter 13: Databases
                         - sqlite
