@@ -155,21 +155,24 @@
 
         Chapter 13: Regular Expressions
 
+### Day 10    - 07th Jan 2025
+
+        Chapter 14: Code Quality
+                        unit testing,
+                        table driven tests,
+                        coverage, profiling, benchmarking
+                        Fuzzy Testing
+
 ## Next class
 
-        Chapter 14: Databases
+                        UberMock, asserts, Testify
+
+        Chapter 15: Databases
                         - sqlite
                         - PostgreSQL
                         - MongoDB
                     ORM
                         - GORM
-
-        Chapter 15: Code Quality
-                        unit testing,
-                        table driven tests,
-                        asserts, Testify
-                        coverage, profiling, benchmarking
-
         Chapter 16: Web Services
                         Consuming REST API
                         (encoding)
