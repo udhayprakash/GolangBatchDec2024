@@ -46,3 +46,7 @@ go.work.sum
 *.ERROR
 *.INFO
 *.WARNING
+
+
+# database files
+*.db

@@ -163,7 +163,7 @@
                         coverage, profiling, benchmarking
                         Fuzzy Testing
 
-## Next class
+### Day 11    - 09th Jan 2025
 
                         UberMock, asserts, Testify
 
@@ -173,6 +173,10 @@
                         - MongoDB
                     ORM
                         - GORM
+
+## Next class
+
+
         Chapter 16: Web Services
                         Consuming REST API
                         (encoding)
