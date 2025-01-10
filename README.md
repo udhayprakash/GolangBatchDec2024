@@ -138,6 +138,7 @@
                         UnStructured- text, pdf files
                         Structured - csv, xml, json, yaml
 
+
 ### Day 9    - 06th Jan 2025
 
                         context
