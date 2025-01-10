@@ -165,11 +165,10 @@
 
 ### Day 11    - 09th Jan 2025
 
-                        UberMock, asserts, Testify
+                        UberMock, Testify/asserts
 
         Chapter 15: Databases
                         - sqlite
-                        - PostgreSQL
                         - MongoDB
                     ORM
                         - GORM
@@ -180,6 +179,7 @@
         Chapter 16: Web Services
                         Consuming REST API
                         (encoding)
+                        Creating REST API
 
 
 ### Concepts Discussed
