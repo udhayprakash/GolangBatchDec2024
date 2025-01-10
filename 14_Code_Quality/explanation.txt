@@ -1,0 +1,12 @@
+code Qualty 
+    - linting --- 
+            get vet 
+    - logic
+            unittesting 
+                Mocking
+            integration or end to end testing
+            Beanchmarking 
+            Profiling
+            Fuzz testing (Mokey Patching)
+            performnace
+            

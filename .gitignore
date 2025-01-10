@@ -26,3 +26,27 @@ go.work.sum
 
 *.pem
 *.key
+
+
+# archive files
+*.zip
+*.tar
+
+# compress files
+*.gz
+*.zlib
+
+# audio files
+*.wav
+
+
+# log files
+*.log
+*.log.*
+*.ERROR
+*.INFO
+*.WARNING
+
+
+# database files
+*.db

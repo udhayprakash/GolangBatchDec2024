@@ -1,0 +1,433 @@
+databases 
+    - 1) sql (relational) dbs
+            TRansactions applictaions (consistency)  - OLTP
+            - WRite Heavy or both equal
+            - ACID principle 
+                - Atomicity 
+                - Consistency
+                - iSloation
+                - Durability
+            - Schema
+
+                Person TAble 
+                    s.no   Name     Age     Salary
+
+            - EX: sqlite, mysql, ms sql, postgresql, oracle DB, ... AWS RDS (mysql , ms sql postgrwsql ), aws aurora (posgresql)
+            - Normalization - relationships
+
+    - 2) Non sql (no-relational) dbs
+            - no schema fixed
+            - one record 10 fields, anotehr record 5 field, ..
+            - Analytics processing (Avaliaability)  - OLAP
+                - Read Heavy executions
+            - Cluster Mode 
+                - One Master node 
+                - multiple slaves
+                - or everyone is masters
+
+            - eX: MongoDB, Cassandra, AWs Keyspace
+
+            - Eventual consistency
+
+            - flattening of record
+
+
+- Normalization
+
+    Person TAble 
+            id      Name     Age     Salary currentAddress
+            1      John      20     212      xxx
+            2      John      20     212      xxy
+            2      John      20     212      xyx
+            2      John      20     212      xyy
+
+                            select * from Person  where id = 1
+                            select * from Person  where Name = 'John'
+               
+    Person TAble 
+            id(PK)      Name     Age     Salary
+            1           John      20     212        
+
+         
+    Address Table 
+            id  personID(FK)    address
+            1       1              xxx
+            2       1              xxy
+            3       1              xyy
+
+        
+        JOINs - INNER, OUTER (LEFT , RIGHT), FULL OUTER 
+
+
+            select *
+            from Person p
+            INNER JOIN Address a ON  p.id = a.personID
+                WHERE p.id = 1 
+
+            select *
+            from Person p
+            INNER JOIN Address a ON  p.id = a.personID
+                WHERE p.Name = 'John'
+
+
+
+
+- SQL Commands
+	1) DDL (Data Definition Language) Commands – to define and modify the structure of a database.
+		CREATE	: To create a new database, table, view, index, or other database objects.
+		ALTER 	: To modify structure of an existing database object, such as a table or a column.
+		DROP 	: To delete a database object, such as a table or an index.
+		TRUNCATE: To removes all records from tables.
+		RENAME 	: To Rename the database objects.
+
+	2) DCL (Data Control Language) Commands – to control user/group access to the data in database
+		GRANT	: To provide privileges to a user or a role.
+		REVOKE	: To revoke privileges that were previously granted
+
+	3) DQL (Data Query Language) Commands – to perform queries on data in database to retrieve necessary information from it.
+		SELECT 	: To retrive data from one or more tables.
+		FROM 	: Specifies the table(s) from which to retrieve the data.
+		WHERE 	: Applies conditions to filter the data
+		GROUP BY: Groups the result set by one or more columns.
+		HAVING 	: Applies conditions to filter the data
+		ORDER BY: sorts the result set based on one or more columns.
+		JOIN 	: Combines rows from two or more tables based on related columns
+
+	4) DML (Data Manipulation Language) Commands – to access, manipulate, and modify data in a database.
+		INSERT 		: It is used to insert data into a table.
+		UPDATE		: It is used to update existing data within a table.
+		DELETE 		: It is used to delete records from a database table.
+
+	5) TCL (Transaction Control Language) Commands – to control transactions in a database.
+		COMMIT				: Commits a transaction, making all the changes made within the transaction permanent.
+		ROLLBACK			: Rolls back a transaction, undoing all the changes made within the transaction.
+		SAVEPOINT			: Sets a savepoint within a transaction, allowing to roll back to that savepoint later.
+		RELEASE SAVEPOINT	: Releases a savepoint within a transaction, making it no longer necessary to roll back to that savepoint.
+
+		SET TRANSACTION		: Sets characteristics for the current transaction, such as isolation level or transaction access mode.
+		BEGIN TRANSACTION (or BEGIN WORK)	: Starts a new transaction.
+		SET TRANSACTION READ ONLY			: Sets the transaction to read-only mode, indicating that no modifications will be made within the transaction.
+		SET TRANSACTION READ WRITE			: Sets the transaction to read-write mode, allowing modifications to be made within the transaction.
+
+	6) Others
+		LOCK		: Table control concurrency.
+		CALL		: Call a PL/SQL or JAVA subprogram.
+		EXPLAIN PLAN: It describes the access path to data.
+
+
+- Order in Commands definition
+	- Select, From, JOIN(ON), Where, Group BY, HAVING, Order BY, LIMIT
+
+
+
+- order of execution sql queries/ SQL Query Order of Execution
+	1) FROM clause
+	2) WHERE
+	3) GROUP BY
+	4) HAVING
+	5) SELECT
+	6) DISTINCT
+	7) ORDER BY
+	8) LIMIT/OFFSET
+
+- SQL constraints
+	NOT NULL 	 # Ensures a column cannot have a NULL value
+	UNIQUE 		 # Ensures all values in a column are unique
+	PRIMARY KEY  # Identifies a record in a table, is NOT NULL & UNIQUE
+	FOREIGN KEY  # References a unique record from another table
+	CHECK		 # Ensures all column values satisfy a condition
+	DEFAULT		 # Set a default value for a column if none is entered
+	INDEX		 # Quick way of retrieving records from database
+
+
+
+- keys
+	- Primary key:
+		- used to uniquely identify each row in a table and does not allow null values.
+		- composite primary key
+			- combination of multiple columns, to make the primary key
+	- Foreign key:
+		- it is one or more columns whose values are based on the primary key values from another table.
+	- Unique Key:
+		- Unique key identifies a each row in the table uniquely.
+		- Unique key allows null values.
+		- composite unique key is a unique key made up of a combination of columns
+
+
+
+
+- SQL Data Types
+	1) Numeric Types:
+		INTEGER			: Whole numbers ranging from -2,147,483,648 to 2,147,483,647.
+		SMALLINT		: Small whole numbers ranging from -32,768 to 32,767.
+		BIGINT			: Large whole numbers ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+		DECIMAL(p, s)	: Exact numeric values with a specified precision (p) and scale (s).
+		NUMERIC(p, s)	: Synonym for DECIMAL.
+		FLOAT(p)		: Floating-point numbers with a variable precision, where p represents the minimum number of significant digits.
+		REAL			: Single-precision floating-point numbers.
+		DOUBLE PRECISION: Double-precision floating-point numbers.
+
+	2) Character Types:
+		CHAR(n)			: Fixed-length character strings of length n.
+		VARCHAR(n)		: Variable-length character strings with a maximum length of n.
+		TEXT			: Variable-length character strings with no specified length limit.
+
+	3) Date and Time Types:
+		DATE			: Dates in the format YYYY-MM-DD.
+		TIME			: Time values in the format HH:MI:SS.
+		TIMESTAMP		: Date and time values in the format YYYY-MM-DD HH:MI:SS.
+		INTERVAL		: Intervals representing a period of time.
+
+	4) Boolean Type:
+		BOOLEAN			: Represents a true or false value.
+
+	5) Binary Types:
+		BINARY(n)		: Fixed-length binary strings of length n.
+		VARBINARY(n)	: Variable-length binary strings with a maximum length of n.
+		BLOB			: Binary large objects for storing large amounts of binary data.
+
+	6) Enumeration Type:
+		ENUM('value1', 'value2', ...): A user-defined list of values where only one value can be chosen.
+
+	7) Set Type:
+		SET('value1', 'value2', ...): A user-defined list of values where multiple values can be chosen.
+
+	8) JSON Type:
+		JSON			: Stores JSON (JavaScript Object Notation) data.
+
+	9) Array Types:
+		ARRAY			: Represents an array or a list of elements.
+
+	10) XML Type:
+		XML				: Stores XML (eXtensible Markup Language) data.
+
+	11) Geometric Types:
+		POINT			: Represents a point in a two-dimensional space.
+		LINE			: Represents a straight line segment.
+		LSEG			: Represents a line segment with a starting and ending point.
+		BOX				: Represents a rectangular box.
+		PATH			: Represents a geometric path.
+		POLYGON			: Represents a closed geometric polygon.
+		CIRCLE			: Represents a circle.
+
+	12)Network Address Types:
+		INET			: Stores an IPv4 or IPv6 network address.
+		CIDR			: Represents an IPv4 or IPv6 network address and its associated subnet mask.
+		MACADDR			: Stores a media access control (MAC) address.
+		MACADDR8		: Stores an extended MAC address.
+
+	13) Bit String Types:
+		BIT(n): Fixed-length bit strings of length n.
+		BIT VARYING(n): Variable-length bit strings with a maximum length of n.
+
+
+- SQL Operators
+	1) Logical Operators
+		AND		: Returns true if both conditions are true.
+		OR		: Returns true if either condition is true.
+		NOT		: Negates the following condition.
+
+	2) Comparison Operators
+		= (Equal to)				: Tests if two values are equal.
+		<> or != (Not equal to)		: Tests if two values are not equal.
+		(Greater than)				: Tests if the left operand is greater than the right operand.
+		< (Less than)				: Tests if the left operand is less than the right operand.
+		= (Greater than or equal to): Tests if the left operand is greater than or equal to the right operand.
+		<= (Less than or equal to)	: Tests if the left operand is less than or equal to the right operand.
+		BETWEEN						: Tests if a value is within a specified range.
+		LIKE						: Tests if a value matches a specified pattern.
+		IN							: Tests if a value is included in a specified set of values.
+		IS NULL						: Tests if a value is null.
+		IS NOT NULL					: Tests if a value is not null.
+
+	3) Arithmetic Operators
+		+ (Addition)				: Adds two values.
+		- (Subtraction)				: Subtracts the right operand from the left operand.
+		* (Multiplication)			: Multiplies two values.
+		/ (Division)				: Divides the left operand by the right operand.
+		% (Modulo)					: Returns the remainder of division between left operand and right operand.
+
+	4) String Operators:
+		|| (Concatenation)			: Concatenates two or more strings.
+
+	5) Aggregate Functions:
+		COUNT()						: Returns the number of rows or non-null values.
+		SUM()						: Calculates the sum of a column's values.
+		AVG()						: Calculates the average of a column's values.
+		MIN()						: Returns the minimum value from a column.
+		MAX()						: Returns the maximum value from a column.
+
+	6) Set Operators:
+		UNION			: Combines the result sets of two or more SELECT statements.
+		INTERSECT		: Returns the common rows between two or more SELECT statements.
+		EXCEPT or MINUS	: Returns rows that exist in first SELECT statement but not in subsequent SELECT statement(s).
+
+	7) Conditional Operators:
+		CASE			: Performs conditional operations in SQL queries.
+		COALESCE		: Returns the first non-null value in a list.
+		NULLIF			: Compares two expressions and returns null if they are equal.
+
+
+
+
+
+- Window Functions:
+	- window functions operate on a set of rows and return a single aggregated value for each row.
+	- Unlike regular aggregate functions, window functions retuns single aggregated value for each row.
+
+	- Ranking Windows Functions
+		1) RANK()
+			- Assigns a rank to each row within a partition or result set.
+			Constraints: The ORDER BY clause is required to determine the ranking order.
+		2) DENSE_RANK()
+			- Assigns a rank to each row within a partition or result set, with no gaps in the ranking values.
+			Constraints: The ORDER BY clause is required to determine the ranking order.
+		3) NTILE()
+			- Divides a result set into a specified number of groups and assigns a group number to each row.
+			Constraints: The number of groups must be specified.
+
+	- Analytical window functions
+		1) ROW_NUMBER()
+			- generates incremental row number dynamically, for each row, based on given order
+				Ex: ROW_NUMBER() OVER (ORDER BY marks) as row_num
+			- If partition by clause is added, the sequencing will be for each of the partition
+				Ex: ROW_NUMBER() OVER (PARTITION BY dept_name ORDER BY marks) as row_num
+		2) PERCENT_RANK()
+			- Calculates the relative rank of a row within a partition as a value between 0 and 1.
+		3) CUME_DIST()
+			- Calculates the cumulative distribution of values within a partition.
+
+	- Value Access Window Function
+		1) LEAD()
+			- Accesses the value of a subsequent row within the same result set.
+			- to get next record. If you give number, say 5, it will give next 5th record
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+		2) LAG()
+			- Accesses the value of a previous row within the same result set.
+			- to get previous record. If you give number, say 5, it will give previous 5th record
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+		3) FIRST_VALUE()
+			- Returns the first value in a sorted group.
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+		4) LAST_VALUE()
+			- Returns the last value in a sorted group.
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+
+
+sqlite3 mydatabase.db
+
+create table users (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name   TEXT NOT NULL,
+	age INTEGER
+);
+
+
+.tables
+
+INSERT INTO users (name, age) VALUES ('John Doe', 30);
+INSERT INTO users (name, age) VALUES ('Jane Smith', 25);
+
+.tables 
+
+select * from users;
+
+select name, age from users;
+
+SELECT * FROM users WHERE age > 25;
+
+
+UPDATE users SET age = 31 WHERE name = 'John Doe';
+
+
+DELETE FROM users WHERE name = 'Jane Smith';
+
+select * from users;     
+
+DELETE FROM users;
+
+DROP TABLE users;
+
+
+// Importing from csv to db 
+sqlite> .mode csv
+sqlite> .import mydata.csv users
+Error: cannot open "mydata.csv"
+sqlite>
+
+// USed for exporting data 
+
+.headers on
+.mode csv
+.output mydata_export.csv
+SELECT * FROM users;
+.output stdout
+
+
+
+
+
+
+- Window Functions:
+	- window functions operate on a set of rows and return a single aggregated value for each row.
+	- Unlike regular aggregate functions, window functions retuns single aggregated value for each row.
+
+	- Ranking Windows Functions
+		1) RANK()
+			- Assigns a rank to each row within a partition or result set.
+			Constraints: The ORDER BY clause is required to determine the ranking order.
+		2) DENSE_RANK()
+			- Assigns a rank to each row within a partition or result set, with no gaps in the ranking values.
+			Constraints: The ORDER BY clause is required to determine the ranking order.
+		3) NTILE()
+			- Divides a result set into a specified number of groups and assigns a group number to each row.
+			Constraints: The number of groups must be specified.
+
+	- Analytical window functions
+		1) ROW_NUMBER()
+			- generates incremental row number dynamically, for each row, based on given order
+				Ex: ROW_NUMBER() OVER (ORDER BY marks) as row_num
+			- If partition by clause is added, the sequencing will be for each of the partition
+				Ex: ROW_NUMBER() OVER (PARTITION BY dept_name ORDER BY marks) as row_num
+		2) PERCENT_RANK()
+			- Calculates the relative rank of a row within a partition as a value between 0 and 1.
+		3) CUME_DIST()
+			- Calculates the cumulative distribution of values within a partition.
+
+	- Value Access Window Function
+		1) LEAD()
+			- Accesses the value of a subsequent row within the same result set.
+			- to get next record. If you give number, say 5, it will give next 5th record
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+		2) LAG()
+			- Accesses the value of a previous row within the same result set.
+			- to get previous record. If you give number, say 5, it will give previous 5th record
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+		3) FIRST_VALUE()
+			- Returns the first value in a sorted group.
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+		4) LAST_VALUE()
+			- Returns the last value in a sorted group.
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+
+	- Navigation Window Functions:
+		a) FIRST_VALUE():
+			- Returns the first value in a sorted group.
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+		b) LAST_VALUE():
+			- Returns the last value in a sorted group.
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+		c) NTH_VALUE():
+			- Returns the value of an expression from the nth row in an ordered set of rows.
+			Constraints: Requires the use of an ORDER BY clause to define the order of rows.
+
+	- Aggregate Functions:
+		- Windows aggregate functions are combination of these regular aggregate functions with OVER clause
+		1) COUNT()
+			- Returns the number of rows or non-null values in a column or expression.
+			Constraints: Can be used with all data types.
+		2) SUM()
+			- Calculates the sum of values in a column or expression.
+			Constraints: Typically used with numeric data types.
+		3) AVG()
+			- Calculates the average of values in a colum

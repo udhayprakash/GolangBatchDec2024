@@ -126,6 +126,9 @@
 
                         bufio
                         StrConv
+
+### Day 8    - 03rd Jan 2025
+
                         context
                         reflect
 
@@ -134,35 +137,50 @@
         Chapter 11: File Operations
                         UnStructured- text, pdf files
                         Structured - csv, xml, json, yaml
-                        ZipFiles - .zip, .tar files
 
-## Next class
+
+### Day 9    - 06th Jan 2025
+
+                        context
+                        Archive files - .zip, .tar files
+                        compress files - .gzip, .zlib files
+
+                        Multimedia files 
+                            - image files
+                            - audio (.wav) files
 
         Chapter 12: Logging
                         Built-in logger
                         Logrus
+                        glog
 
-        Chapter 13: Databases
+        Chapter 13: Regular Expressions
+
+### Day 10    - 07th Jan 2025
+
+        Chapter 14: Code Quality
+                        unit testing,
+                        table driven tests,
+                        coverage, profiling, benchmarking
+                        Fuzzy Testing
+
+### Day 11    - 09th Jan 2025
+
+                        UberMock, Testify/asserts
+
+        Chapter 15: Databases
                         - sqlite
-                        - PostgreSQL
                         - MongoDB
                     ORM
                         - GORM
-                        - ent
 
-        Chapter 14: Code Quality
-                unit testing,
-					table driven tests,
-					asserts, Testify
-				coverage, profiling, benchmarking
-
-
-        Chapter 15: Regular Expressions
+## Next class
 
 
         Chapter 16: Web Services
                         Consuming REST API
                         (encoding)
+                        Creating REST API
 
 
 ### Concepts Discussed
