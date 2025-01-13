@@ -183,17 +183,24 @@
                     Consuming REST APIs (ordinary, CRUD ops,  streaming),
 
 ### Day 13    - 13th Jan 2025
+
                     Templates
-                    
+                    creating REST APIs
+                        - using http/net
+                            - Handlers
+                            - managing headers
+                            - CRUD operations (GET, POST, PUT, DELETE)
+                            - Static File Server
+                            - User Defined Mux
+                            - Middlewares
 
-
-                    paginated apis consumption
-
-                    web scraping
-                    creating REST APIs (with builtin http, and with Gin framework)
 ## Next class
+                        - using Gin Framework
 
-        AWS Cloud 
+                   web scraping
+    
+        AWS Cloud
+
             AWS Lambda Functions
             Development setup
             

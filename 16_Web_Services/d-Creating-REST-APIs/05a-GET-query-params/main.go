@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 )
 
 func main() {
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/new", handler)
-	http.ListenAndServe("localhost:8090", nil)
+	log.Fatal(http.ListenAndServe("localhost:8090", nil))
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -34,3 +35,4 @@ func handler(w http.ResponseWriter, r *http.Request) {
 //  http://localhost:8090/
 //  http://localhost:8090/new    404
 //  http://localhost:8090?key=123132
+//  http://localhost:8090?key=123,132
