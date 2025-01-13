@@ -174,13 +174,25 @@
                     ORM
                         - GORM
 
-## Next class
-
+### Day 12    - 10th Jan 2025
 
         Chapter 16: Web Services
-                        Consuming REST API
-                        (encoding)
-                        Creating REST API
+                    net package
+                    Web Services
+                        SOAP, REST API, GraphQL
+                    Consuming REST APIs (ordinary, CRUD ops,  streaming),
+
+## Next class
+                    paginated apis consumption
+
+                    web scraping
+                    creating REST APIs (with builtin http, and with Gin framework)
+
+
+        AWS Cloud 
+            AWS Lambda Functions
+            Development setup
+            
 
 
 ### Concepts Discussed
