@@ -179,15 +179,19 @@
         Chapter 16: Web Services
                     net package
                     Web Services
-                        SOAP, REST API, GraphQL
+                        SOAP, REST API
                     Consuming REST APIs (ordinary, CRUD ops,  streaming),
 
-## Next class
+### Day 13    - 13th Jan 2025
+                    Templates
+                    
+
+
                     paginated apis consumption
 
                     web scraping
                     creating REST APIs (with builtin http, and with Gin framework)
-
+## Next class
 
         AWS Cloud 
             AWS Lambda Functions
