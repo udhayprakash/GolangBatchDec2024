@@ -194,11 +194,16 @@
                             - User Defined Mux
                             - Middlewares
 
-## Next class
+### Day 14    - 15th Jan 2025
+
                         - using Gin Framework
 
+                   cobra cli 
                    web scraping
-    
+
+
+## Next class
+
         AWS Cloud
 
             AWS Lambda Functions
