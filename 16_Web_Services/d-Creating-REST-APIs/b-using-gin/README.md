@@ -69,3 +69,4 @@ Static File Serving:
 Template Rendering:
 
     Support for HTML templates, allowing dynamic web pages.
+
