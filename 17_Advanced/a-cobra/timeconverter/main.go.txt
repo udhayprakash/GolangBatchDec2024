@@ -1,0 +1,65 @@
+package main
+
+import (
+	"fmt"
+	"github.com/spf13/cobra"
+	"os"
+	"strings"
+	"time"
+)
+
+func main() {
+	var inputTime string
+	var rootCmd = &cobra.Command{
+		Use:   "timeconverter",
+		Short: "Convert local time to UTC",
+		Run: func(cmd *cobra.Command, args []string) {
+			convertToUTC(inputTime)
+		},
+	}
+
+	rootCmd.Flags().StringVarP(&inputTime, "time", "t", "", "Time to convert (e.g., '3 PM EST', '03:00 PM EST', '3 EST')")
+	rootCmd.MarkFlagRequired("time")
+
+	if err := rootCmd.Execute(); err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+}
+
+func convertToUTC(input string) {
+	// Normalize the input
+	input = strings.TrimSpace(input)
+
+	location, err := time.LoadLocation("America/New_York") // EST/EDT
+	if err != nil {
+		fmt.Println("Error loading location:", err)
+		return
+	}
+
+	// Define the formats we expect
+	formats := []string{
+		"3 PM MST",
+		"15:04 PM MST",
+		"3 MST",
+	}
+
+	var parsedTime time.Time
+	var parseErr error
+
+	for _, format := range formats {
+		parsedTime, parseErr = time.ParseInLocation(format, input, location)
+		if parseErr == nil {
+			break
+		}
+	}
+
+	if parseErr != nil {
+		fmt.Println("Could not parse the time:", parseErr)
+		return
+	}
+
+	// Convert to UTC
+	utcTime := parsedTime.UTC()
+	fmt.Printf("Converted Time: %s UTC\n", utcTime.Format("03:04 PM"))
+}
