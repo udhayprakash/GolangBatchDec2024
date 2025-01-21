@@ -54,3 +54,22 @@ go.work.sum
 
 # image files
 *.jpg
+
+# zip files
+*.zip
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude all .terraform directories which contain module downloads
+**/.terraform/*
+
+# Exclude .terraform.lock.hcl which contains the lock file for provider downloads
+*.terraform.lock.hcl
+
+# Goland IDE 
+*.idea
