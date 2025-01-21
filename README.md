@@ -197,21 +197,45 @@
 ### Day 14    - 15th Jan 2025
 
                         - using Gin Framework
+                            simple server setup
+                            CRUD operations
+                            Path and Query Parameters
+                            Test cases on API responses
+                            Real World Project 
+                                - Grocery Store API
+                                - Project-ready project
 
-                   cobra cli 
-                   web scraping
+                    working with Goland IDE
+                    Cobra Package and CLI tools
 
 
-## Next class
+### Day 15    - 21st Jan 2025
 
         AWS Cloud
 
+            AWS Development setup 
+            AWS CLI setup and usage
+            AWS IAM 
+                creation of Users, Groups, and assiging policies
+            AWS s3 buckets
+                bucket opertions
+                pre-signed url 
+                static website hosting
+
             AWS Lambda Functions
-            Development setup
-            
+                Golang vs Python/Node.js in setup
+                Console based lambda creation
+                    shell script based lambda functions
+                bootstrap and packing
+                Inputs to Lambda functions
+                function URLs, for lambda functions
 
+            Terraform
+                installation and setup
+                Importance of terraform configuration files
+                Creating lambda function with terraform
 
-### Concepts Discussed
+### Additional Concepts Discussed
 
     Design Patterns 
         Iterator pattern
@@ -229,5 +253,3 @@
         set
         Single LinkedList
 
-
-        
