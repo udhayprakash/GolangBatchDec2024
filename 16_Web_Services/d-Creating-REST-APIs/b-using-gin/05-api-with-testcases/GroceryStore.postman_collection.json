@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "7813f9fa-72b6-4136-9f8b-e8b7c0a9a342",
+		"name": "GroceryStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2182692"
+	},
+	"item": [
+		{
+			"name": "a-basics",
+			"item": [
+				{
+					"name": "a-welcome",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080",
+							"host": [
+								"localhost"
+							],
+							"port": "8080"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "a-welcome json",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-path-params",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/groceries/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"groceries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "a-basics"
+		},
+		{
+			"name": "b-query-params",
+			"item": [
+				{
+					"name": "http://localhost:8080/groceries?maxPrice=1&minPrice=0.5",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/groceries?maxPrice=1&minPrice=0.5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"groceries"
+							],
+							"query": [
+								{
+									"key": "maxPrice",
+									"value": "1"
+								},
+								{
+									"key": "minPrice",
+									"value": "0.5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "c-CRUD-ops",
+			"item": [
+				{
+					"name": "a-GET-all",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/groceries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"groceries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "a-GET-specific",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/groceries/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"groceries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "b-POST-create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"ID\": 3, \"Name\": \"Wheat\", \"Price\": 0.99}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/groceries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"groceries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "c-PUT-update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"ID\": 1, \"Name\": \"Rice\", \"Price\": 0.33}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/groceries/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"groceries",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "d-CORS",
+			"item": [
+				{
+					"name": "a-cors-headers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
